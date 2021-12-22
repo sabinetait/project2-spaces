@@ -1,6 +1,7 @@
 html {
     font-size: 125%;
     font-family: 'Open Sans', sans-serif;
+    color: $black-shade;
 }
 
 h1,
@@ -48,7 +49,6 @@ a {
 }
 
 h3,
-a,
 .logo {
     text-transform: uppercase;
 }

@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        a {
+            text-transform: uppercase;
+            padding-left: 25px;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 10% 20%;
+}
+
+.header-img {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -10%;
+    left: 43%;
+}

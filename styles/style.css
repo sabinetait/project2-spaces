@@ -226,6 +226,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  background-color: #F4F3F0;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -246,6 +250,7 @@ ul {
 html {
   font-size: 125%;
   font-family: "Open Sans", sans-serif;
+  color: #000000;
 }
 
 h1,
@@ -293,7 +298,47 @@ a {
 }
 
 h3,
-a,
 .logo {
   text-transform: uppercase;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul a {
+  text-transform: uppercase;
+  padding-left: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10% 20%;
+}
+
+.header-img {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -10%;
+  left: 43%;
 }
