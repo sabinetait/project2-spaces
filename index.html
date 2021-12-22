@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaces</title>
     <link rel="icon" href="./Option1-assets/badge.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="wrapper">
         <nav>
             <a href="#" class="logo">Spaces</a>
             <ul>
@@ -30,7 +33,7 @@
 
     <main>
         <section id="about">
-            <div>
+            <div class="wrapper">
                 <div class="about-content">
                     <h2>Our Practice</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente veniam id a debitis accusantium in quod quo ipsam quae soluta, culpa inventore dolor laborum dolorem reprehenderit nesciunt recusandae quidem obcaecati consequatur cumque earum. Quis aut assumenda est facilis laborum esse aliquam tenetur, beatae doloremque. Tenetur.</p>
@@ -44,11 +47,11 @@
         </section>
 
         <section id="projects">
-            <div>
+            <div class="wrapper">
                 <h2>Spotlight</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam doloribus asperiores voluptas veritatis.</p>
             </div>
-            <div class="gallery">
+            <div class="wrapper gallery">
                 <div class="row1">
                     <img src="./Option1-assets/image3.jpg" alt="Interior of modern kitchen facing kitchen island">
                     <h3>Eloise Ave</h3>
@@ -76,27 +79,29 @@
         </section>
 
         <section id="contact">
-            <div>
-                <h2>Tell us about your ideas</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum possimus magni atque nulla quisquam?</p>
+            <div class="wrapper">
+                <div>
+                    <h2>Tell us about your ideas</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum possimus magni atque nulla quisquam?</p>
+                </div>
+                <form action="">
+                    <label for="user-name">Name</label>
+                    <input type="text" id="user-name" required="true">
+                
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" required="true">
+                
+                    <label for="user-message">Message</label>
+                    <textarea name="user-message" id="user-message" cols="30" rows="10" required="true"></textarea>
+                
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-            <form action="">
-                <label for="user-name">Name</label>
-                <input type="text" id="user-name" required="true">
-
-                <label for="user-email">Email</label>
-                <input type="email" id="user-email" required="true">
-
-                <label for="user-message">Message</label>
-                <textarea name="user-message" id="user-message" cols="30" rows="10" required="true"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
 
         </section>
 
         <section id="testimonial">
-            <div>
+            <div class="wrapper">
                 <h2>Words from our clients</h2>
                 <div class="decorative-line"></div>
                 <p>Spaces were an incredible team of passionate creatives, who truly transformed our space into a beautiful sanctuary.</p>
@@ -113,7 +118,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="wrapper">
         <div>
             <a href="#" class="logo">Spaces</a>
             <p>129 Jourdan Ave,</p>
