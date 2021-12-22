@@ -247,6 +247,11 @@ ul {
   padding: 0;
 }
 
+section,
+footer {
+  margin: 7% 0%;
+}
+
 html {
   font-size: 125%;
   font-family: "Open Sans", sans-serif;
@@ -341,4 +346,56 @@ h1 {
   position: absolute;
   top: -10%;
   left: 43%;
+}
+
+div.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15%;
+}
+div.about .about-content,
+div.about .image-overlay {
+  width: calc(50% - 5%);
+}
+div.about a {
+  text-transform: uppercase;
+  background-color: #B18F39;
+  color: #F4F3F0;
+  padding: 15px 35px;
+}
+
+.about-content h2 {
+  margin-bottom: 10%;
+}
+.about-content p {
+  line-height: 1.8rem;
+  margin-bottom: 10%;
+}
+
+.image-overlay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.image-overlay img {
+  position: absolute;
+  width: 65%;
+  height: auto;
+}
+.image-overlay .kitchen1 {
+  top: 40%;
+  right: 40%;
+}
+.image-overlay .kitchen2 {
+  z-index: -1;
 }

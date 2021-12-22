@@ -11,3 +11,54 @@ $black-shade: #000000;
 @import "typography";
 
 @import "header";
+
+div.about {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding-bottom: 15%;
+
+    .about-content,
+    .image-overlay {
+        width: calc(50% - 5%);
+    }
+
+    a {
+        text-transform: uppercase;
+        background-color: $accent;
+        color: $white-shade;
+        padding: 15px 35px;
+    }
+}
+
+.about-content {
+    h2 {
+        margin-bottom: 10%;
+    }
+    
+    p {
+        line-height: 1.8rem;
+        margin-bottom: 10%;
+    }
+}
+
+.image-overlay {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        position: absolute;
+        width: 65%;
+        height: auto;
+    }
+
+    .kitchen1 {
+        top: 40%;
+        right: 40%;
+    }
+
+    .kitchen2 {
+        z-index: -1;
+    }
+}
