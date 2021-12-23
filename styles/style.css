@@ -463,7 +463,7 @@ div.about a {
 }
 
 div.contact {
-  padding: 7% 0%;
+  padding: 5% 0%;
 }
 div.contact h2,
 div.contact p {
@@ -471,6 +471,7 @@ div.contact p {
 }
 div.contact p {
   width: 40%;
+  line-height: 1.7rem;
 }
 div.contact button {
   text-transform: uppercase;
@@ -478,6 +479,7 @@ div.contact button {
   color: #F4F3F0;
   padding: 15px 35px;
   border: none;
+  margin-top: 20px;
 }
 
 form {
@@ -507,6 +509,7 @@ form {
 #user-email,
 #user-message {
   border: 1px solid #B18F39;
+  line-height: 1.7rem;
 }
 
 .user-name {
@@ -525,4 +528,8 @@ form {
 
 textarea {
   resize: none;
+}
+
+label {
+  margin: 10px 0;
 }
