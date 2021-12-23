@@ -280,6 +280,17 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  background-color: #B18F39;
+  height: 2px;
+  width: 50px;
+  top: 140%;
+  left: 0;
 }
 
 h3,
@@ -547,6 +558,7 @@ div.testimonial-content {
   width: 70%;
   border-left: 5px solid #B18F39;
   padding-left: 5%;
+  margin-top: 7%;
 }
 div.testimonial-content p:first-child {
   font-size: 1.3rem;
