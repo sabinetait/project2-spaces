@@ -399,3 +399,58 @@ div.about a {
 .image-overlay .kitchen2 {
   z-index: -1;
 }
+
+.spotlight h2,
+.spotlight p {
+  margin-bottom: 5%;
+}
+.spotlight p {
+  width: 40%;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .row1 {
+  max-width: calc((100% / 2) - 1%);
+  margin-bottom: 2%;
+}
+.gallery .row1 img {
+  height: 100%;
+}
+.gallery .row2 {
+  max-width: calc((100% / 3) - 1.5%);
+}
+.gallery .row2 img {
+  height: 90%;
+  width: 100%;
+}
+
+.row1,
+.row2 {
+  position: relative;
+}
+.row1 h3,
+.row2 h3 {
+  background-color: white;
+  text-align: right;
+  padding: 10px 15px;
+  max-width: 40%;
+  position: absolute;
+  right: 0;
+}
+
+.row1 h3 {
+  bottom: 2%;
+}
+
+.row2 h3 {
+  bottom: 10%;
+}
