@@ -20,10 +20,16 @@ div.contact {
     button {
     text-transform: uppercase;
     background-color: $accent;
+    border: 1px solid $accent;
     color: $white-shade;
     padding: 15px 35px;
-    border: none;
     margin-top: 20px;
+    }
+
+    button:hover,
+    button:focus {
+        background-color: $white-shade;
+        color: $accent;
     }
 }
 

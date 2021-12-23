@@ -55,6 +55,11 @@ p {
     font-size: 1.4rem;
 }
 
+.logo:hover,
+.logo:focus {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: $black-shade;

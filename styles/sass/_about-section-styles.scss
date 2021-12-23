@@ -13,7 +13,14 @@ div.about {
         text-transform: uppercase;
         background-color: $accent;
         color: $white-shade;
+        border: 1px solid $accent;
         padding: 15px 35px;
+    }
+
+    a:hover,
+    a:focus {
+        background-color: $white-shade;
+        color: $accent;
     }
 }
 

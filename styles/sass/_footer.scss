@@ -26,6 +26,11 @@ footer {
             line-height: 2rem;
             text-decoration: underline;
         }
+
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
     }
 }
 

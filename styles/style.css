@@ -311,6 +311,11 @@ p {
   font-size: 1.4rem;
 }
 
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -345,6 +350,10 @@ nav ul {
 nav ul a {
   text-transform: uppercase;
   padding-left: 50px;
+}
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
 }
 
 h1 {
@@ -381,7 +390,13 @@ div.about a {
   text-transform: uppercase;
   background-color: #B18F39;
   color: #F4F3F0;
+  border: 1px solid #B18F39;
   padding: 15px 35px;
+}
+div.about a:hover,
+div.about a:focus {
+  background-color: #F4F3F0;
+  color: #B18F39;
 }
 
 .about-content h2 {
@@ -490,10 +505,15 @@ div.contact p {
 div.contact button {
   text-transform: uppercase;
   background-color: #B18F39;
+  border: 1px solid #B18F39;
   color: #F4F3F0;
   padding: 15px 35px;
-  border: none;
   margin-top: 20px;
+}
+div.contact button:hover,
+div.contact button:focus {
+  background-color: #F4F3F0;
+  color: #B18F39;
 }
 
 form {
@@ -639,6 +659,10 @@ footer {
 .links div a {
   line-height: 2rem;
   text-decoration: underline;
+}
+.links div a:hover,
+.links div a:focus {
+  text-decoration: none;
 }
 
 .decorative-footer-line {
