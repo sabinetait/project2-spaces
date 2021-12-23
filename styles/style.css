@@ -302,6 +302,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 h3,
@@ -572,6 +573,15 @@ div.testimonial-content .headshot {
   position: absolute;
   top: 80%;
   left: 90%;
+}
+
+.full-image {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../Option1-assets/image9.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 footer {
