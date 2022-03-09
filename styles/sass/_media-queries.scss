@@ -1,0 +1,110 @@
+// Changes in viewport size
+
+@media (max-width: 900px) {
+    .gallery {
+        .row1,
+        .row2 {
+            max-width: 100%;
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 825px) {
+    // Contact section
+    div.contact {
+        p {
+            width: 100%;
+
+        }
+    }
+
+    form {
+        max-width: 100%;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .user-name,
+    .user-email {
+        width: 100%;
+    }
+
+    .user-email {
+        margin-left: 0;
+    }
+
+    .user-name {
+        margin-right: 0;
+    }
+
+    // Footer
+    footer {
+        flex-direction: column;
+
+    }
+
+    div.links {
+        width: 100%;
+        justify-content: left;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 0;
+
+            ul {
+                display: flex;
+            
+                li {
+                padding-right: 20px;
+                }   
+            }
+        }
+    }
+
+    .decorative-footer-line {
+        margin-top: 2%;
+    }
+    
+    .hidden {
+        visibility: visible;
+    }
+}
+
+
+@media (max-width: 725px) {
+    // About section 
+    div.about {
+        flex-direction: column;
+
+        .about-content,
+        .image-overlay {
+            width: 600px;
+            height: auto;
+        }
+    }
+    .image-overlay {
+        margin: 400px 0 500px;
+
+        .kitchen1 {
+            right: 200px;
+        }
+
+        .kitchen2 {
+            top: -350px;
+        }
+    }
+
+    // Gallery section
+    .spotlight {
+        p {
+            width: 100%;
+        }
+        
+    }
+}
