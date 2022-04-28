@@ -9,16 +9,26 @@ nav {
         flex-wrap: wrap;
         align-items: center;
 
-        a {
-            text-transform: uppercase;
-            padding-left: 50px;
-        }
-
-        a:hover,
-        a:focus {
-            text-decoration: underline;
+        li {
+            a {
+                text-transform: uppercase;
+                padding-left: 50px;
+            }
+    
+            a:hover,
+            a:focus {
+                text-decoration: underline;
+            }
         }
     }
+}
+
+.open {
+    transform: translateY(0%);
+}
+
+.stop-scroll {
+    overflow: hidden;
 }
 
 h1 {
@@ -26,8 +36,10 @@ h1 {
     margin: 10% 20%;
 }
 
-.header-img {
-    position: relative;
+.header-content-container {
+    .header-img {
+        position: relative;
+    }    
 }
 
 .badge {
@@ -35,3 +47,30 @@ h1 {
     top: -10%;
     left: 43%;
 }
+
+header {
+    position: relative;
+}
+
+.hamburger {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    z-index: 20;
+    visibility: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+
+    .bar {
+        height: 4px;
+        width: 30px;
+        background-color: $grey-shade;
+    }
+}
+
+
