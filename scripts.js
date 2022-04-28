@@ -2,7 +2,7 @@ const hamburgerMenu = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 const navLink = document.querySelectorAll('.nav-link');
 const body = document.querySelector('body');
-console.log(navLink);
+
 hamburgerMenu.addEventListener('click', (event) => {
     handleMobileNav(event.target);
 })
