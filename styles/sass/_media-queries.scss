@@ -1,5 +1,4 @@
 // Changes in viewport size
-
 @media (max-width: 900px) {
     // Header
     header {
@@ -39,7 +38,35 @@
     .hamburger {
         visibility: visible;
     }
+    // About
+    div.about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 0%;
+
+        .about-content,
+        .image-overlay {
+            width: 100%;
+            margin-bottom: 10%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .image-overlay {
+        justify-content: flex-start;
+        height: 100vh;
+
+        .kitchen1 {
+            right: 0;
+        }
     
+        .kitchen2 {
+            z-index: -1;
+        }
+    }
+
     // Gallery
     .gallery {
         .row1,
@@ -48,6 +75,17 @@
 
             img {
                 display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .row2 {
+            img {
+                margin-bottom: 2%;
+            }
+            h3 {
+                bottom: 2%;
             }
         }
     }
@@ -118,25 +156,10 @@
 
 
 @media (max-width: 725px) {
-    // About section 
     div.about {
-        flex-direction: column;
-
-        .about-content,
-        .image-overlay {
-            width: 600px;
-            height: auto;
-        }
-    }
-    .image-overlay {
-        margin: 400px 0 500px;
-
-        .kitchen1 {
-            right: 200px;
-        }
-
-        .kitchen2 {
-            top: -350px;
+        a {
+            width: 100%;
+            text-align: center;
         }
     }
 
@@ -146,5 +169,54 @@
             width: 100%;
         }
         
+    }
+}
+
+@media(max-width: 500px) {
+    // Typography
+    h1 {
+        font-size: 1.3rem;
+        margin: 110px 0 60px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        position: relative;
+    }
+    
+    h2::after {
+        content: '';
+        position: absolute;
+        background-color: $accent;
+        height: 2px;
+        width: 50px;
+        top: 140%;
+        left: 0;
+    }
+    // Header
+    .badge {
+        height: 90px;
+        width: 90px;
+        top: -19%;
+        left: 35%;
+    }
+    // Testimonials
+    div.testimonial-content {
+        width: 90%;
+        height: 60vh;
+
+        p:first-child {
+            font-size: 1rem;
+        }
+        .headshot {
+            height: 90px;
+            width: 90px;
+
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 105%;
+        left: 70%;
     }
 }

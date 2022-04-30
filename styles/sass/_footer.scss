@@ -5,9 +5,17 @@ footer {
     padding: 7% 0;
 }
 
-.address {
+address {
     width: 60%;
     padding-top: 1%;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    p,
+    a {
+        line-height: 1.5rem;
+    }
 }
 
 .links {
@@ -46,4 +54,15 @@ footer {
 
 .copyright {
     color: $grey-shade;
+
+    a {
+        text-decoration: none;
+        color: $grey-shade;
+        font-size: 0.9rem;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
 }
