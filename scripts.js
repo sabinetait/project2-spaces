@@ -14,10 +14,10 @@ const handleMobileNav = () => {
     // close nav when link any is clicked, allow scroll to link
     navLink.forEach((link) => {
         link.addEventListener('click', handleNavLinks);
-        body.classList.remove('stop-scroll');
     })
 }
 
 const handleNavLinks = () => {
     nav.classList.remove('open');
+    body.classList.remove('stop-scroll');
 }

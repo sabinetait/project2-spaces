@@ -394,10 +394,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 22px;
+  height: 100px;
   z-index: 20;
   visibility: hidden;
   margin-top: 50px;
@@ -406,10 +403,15 @@ header {
   left: 0;
   background: transparent;
 }
+.hamburger .menu-text {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
 .hamburger .bar {
-  height: 4px;
-  width: 30px;
-  background-color: #9C9B89;
+  height: 2.2px;
+  width: 100%;
+  background-color: #000000;
 }
 
 div.about {

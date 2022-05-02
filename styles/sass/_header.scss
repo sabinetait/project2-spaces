@@ -56,8 +56,8 @@ header {
     cursor: pointer; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 22px;
+    // justify-content: space-between;
+    height: 100px;
     z-index: 20;
     visibility: hidden;
     margin-top: 50px;
@@ -66,10 +66,16 @@ header {
     left: 0;
     background: transparent;
 
+    .menu-text {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin: 8px 0;
+    }
+
     .bar {
-        height: 4px;
-        width: 30px;
-        background-color: $grey-shade;
+        height: 2.2px;
+        width: 100%;
+        background-color: $black-shade;
     }
 }
 
